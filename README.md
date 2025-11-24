@@ -1,73 +1,99 @@
-# Welcome to your Lovable project
+# Cole's Design Showcase
 
-## Project info
+A modern portfolio website showcasing UI/UX design work and frontend development projects.
 
-**URL**: https://lovable.dev/projects/e98b37e8-f8d0-4d4a-91f8-2230e0965834
+## 🚀 Getting Started
 
-## How can I edit this code?
+### Prerequisites
 
-There are several ways of editing your application.
+- Node.js (v18 or higher recommended)
+- npm or yarn
 
-**Use Lovable**
+### Installation
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/e98b37e8-f8d0-4d4a-91f8-2230e0965834) and start prompting.
+```bash
+# Install dependencies
+npm install
 
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The application will be available at `http://localhost:8080`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🛠️ Available Scripts
 
-**Use GitHub Codespaces**
+- `npm run dev` - Start development server with hot reload
+- `npm run build` - Build for production
+- `npm run build:dev` - Build for development
+- `npm run preview` - Preview production build locally
+- `npm run lint` - Run ESLint
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
+## 📦 Tech Stack
 
 This project is built with:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- **Vite** - Next-generation frontend tooling
+- **React 18** - UI library
+- **TypeScript** - Type safety
+- **Tailwind CSS** - Utility-first CSS framework
+- **shadcn/ui** - High-quality component library
+- **React Router** - Client-side routing
+- **React Query** - Data fetching and caching
 
-## How can I deploy this project?
+## 📁 Project Structure
 
-Simply open [Lovable](https://lovable.dev/projects/e98b37e8-f8d0-4d4a-91f8-2230e0965834) and click on Share -> Publish.
+```
+├── public/          # Static assets
+├── src/
+│   ├── assets/     # Images and media files
+│   ├── components/ # React components
+│   │   └── ui/     # shadcn/ui components
+│   ├── hooks/      # Custom React hooks
+│   ├── lib/        # Utility functions
+│   └── pages/      # Page components
+└── ...
+```
 
-## Can I connect a custom domain to my Lovable project?
+## 🎨 Features
 
-Yes, you can!
+- Responsive design
+- Modern UI components
+- Dark mode support
+- Optimized performance
+- Type-safe development
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 🚀 Deployment
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+This project is configured to automatically deploy to GitHub Pages using GitHub Actions.
+
+### Automatic Deployment
+
+The project includes a GitHub Actions workflow (`.github/workflows/deploy.yml`) that:
+- Builds the project on every push to the `main` branch
+- Deploys to GitHub Pages automatically
+
+### Setup GitHub Pages
+
+1. Go to your repository settings on GitHub
+2. Navigate to **Pages** in the left sidebar
+3. Under **Source**, select **GitHub Actions**
+4. The workflow will automatically deploy on the next push to `main`
+
+### Access Your Site
+
+After deployment, your site will be available at:
+- `https://<your-username>.github.io/cole-s-design-showcase/`
+
+Or if you've configured a custom domain, it will use that instead.
+
+### Manual Deployment
+
+You can also trigger the workflow manually:
+1. Go to the **Actions** tab in your repository
+2. Select the **Build and Deploy** workflow
+3. Click **Run workflow**
+
+## 📝 License
+
+This project is private and proprietary.
