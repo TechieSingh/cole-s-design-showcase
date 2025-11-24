@@ -12,49 +12,49 @@ import project3 from "@/assets/project-3.jpg";
 const Index = () => {
   const projects = [
     {
-      title: "AI-Powered IVR System",
-      role: "AI Engineer Intern",
-      timeline: "Rakuten",
-      teamSize: "2024",
-      impact: "Achieved 90%+ intent accuracy",
-      tools: ["OpenAI GPT", "Twilio SIP", "Python", "NLP", "Real-time AI"],
-      problem: "Built intelligent IVR system handling support calls with AI automation, reducing agent hand-offs and cutting latency by 22% through advanced DSP integration.",
-      image: project1,
+      title: "Healthcare Dashboard Redesign",
+      role: "UI/UX Designer & Developer",
+      timeline: "Siemens Healthineers",
+      teamSize: "2021-2023",
+      impact: "Reduced user task time by 45%",
+      tools: ["Figma", "React", "TypeScript", "C#", "User Testing"],
+      problem: "Redesigned medical imaging interface with focus on accessibility and efficiency. Conducted user research with 50+ healthcare professionals, reducing cognitive load and improving workflow for radiologists.",
+      image: project3,
       link: "#",
     },
     {
-      title: "EyeTurn Cloud & AR Vision",
-      role: "AI Engineer Co-op",
+      title: "AR Smart Glasses Interface",
+      role: "UX Designer & Developer",
       timeline: "Harvard Medical School",
       teamSize: "2023-2024",
-      impact: "94% accuracy in object guidance",
-      tools: ["PyTorch", "GPU Lambda", "AR", "Computer Vision", "AWS"],
-      problem: "Engineered AR-based vision system for smart glasses with face/gaze detection. Published ACM paper and demonstrated to 100+ users in live settings.",
+      impact: "94% usability score in testing",
+      tools: ["Figma", "React", "AR Design", "User Research", "PyTorch"],
+      problem: "Designed intuitive AR interface for visually impaired users. Created gesture-based navigation system tested with 100+ users. Balanced technical constraints with accessibility requirements.",
       image: project2,
       link: "#",
     },
     {
-      title: "Real-time Medical Imaging",
-      role: "Software Engineer",
-      timeline: "Siemens Healthineers",
-      teamSize: "2021-2023",
-      impact: "Reduced rendering time by 70%",
-      tools: ["C#", "ASP.NET Core", "Azure", "Real-time Systems", "Medical Imaging"],
-      problem: "Architected real-time image marking system for medical imaging platform, dramatically improving performance and user experience for healthcare professionals.",
-      image: project3,
+      title: "AI Customer Support Portal",
+      role: "UI/UX Designer",
+      timeline: "Rakuten",
+      teamSize: "2024",
+      impact: "Increased customer satisfaction by 40%",
+      tools: ["Figma", "React", "OpenAI Integration", "A/B Testing"],
+      problem: "Designed conversational UI for AI-powered customer support system. Created seamless handoff experience between AI and human agents, improving user trust and reducing frustration.",
+      image: project1,
       link: "#",
     },
   ];
 
   const testimonials = [
     {
-      quote: "Aditya's AI-powered IVR system transformed our customer support operations. His ability to integrate OpenAI GPT with our existing infrastructure was impressive, achieving over 90% intent accuracy.",
-      name: "Engineering Lead",
+      quote: "Aditya brings a unique combination of design thinking and technical expertise. His UI designs are not only beautiful but implementable, which accelerates our development cycle significantly.",
+      name: "Product Lead",
       role: "Senior Manager",
       company: "Rakuten",
     },
     {
-      quote: "Outstanding work on the EyeTurn Cloud project. Aditya's computer vision expertise and GPU optimization skills resulted in a 94% accurate AR system that's now published in ACM.",
+      quote: "Exceptional UX work on the AR glasses interface. Aditya's user research and iterative design process resulted in a highly accessible system that users loved. His technical background helped bridge design and engineering.",
       name: "Research Director",
       role: "Principal Investigator",
       company: "Harvard Medical School",
@@ -63,24 +63,24 @@ const Index = () => {
 
   const skills = [
     {
-      title: "AI & Machine Learning",
+      title: "UI/UX Design",
       icon: Palette,
-      items: ["OpenAI GPT & LLMs", "PyTorch & NLP", "Computer Vision", "Real-time Deployment"],
+      items: ["User Research & Testing", "Wireframing & Prototyping", "Figma & Design Systems", "Accessibility (WCAG)"],
     },
     {
-      title: "Development",
+      title: "Frontend Development",
       icon: Code,
-      items: ["Python, Java, C#, JavaScript", "React, Node.js, Express.js", "ASP.NET Core, Spring Boot", "REST APIs & OAuth 2.0"],
+      items: ["React & TypeScript", "Tailwind CSS & Styling", "Responsive Design", "Framer Motion & Animations"],
     },
     {
-      title: "Cloud & DevOps",
+      title: "Product Design",
       icon: Briefcase,
-      items: ["AWS & Azure", "Docker & Kubernetes", "Terraform & Git", "Azure DevOps & Linux"],
+      items: ["User Personas & Journeys", "Information Architecture", "A/B Testing & Analytics", "Design-to-Code Workflow"],
     },
     {
-      title: "Databases & Integration",
+      title: "Technical Skills",
       icon: Users,
-      items: ["MySQL, PostgreSQL, MongoDB", "Firebase & SQLite", "Twilio SIP & LiveKit", "Real-time Systems"],
+      items: ["Python & AI Integration", "REST APIs & Backend", "AWS & Cloud Services", "Git & Version Control"],
     },
   ];
 
@@ -97,17 +97,17 @@ const Index = () => {
         
         <div className="relative z-10 container mx-auto px-6 py-20 text-center">
           <Badge className="mb-6 animate-fade-in bg-accent/20 text-accent border-accent/30">
-            AI Engineer • Developer • Problem Solver
+            UI/UX Designer • Developer • Problem Solver
           </Badge>
           
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in-up text-primary-foreground">
             Aditya Ranjan Singh
             <br />
-            Building <span className="text-accent">Intelligent</span> Solutions
+            Designing <span className="text-accent">Intuitive</span> Experiences
           </h1>
           
           <p className="text-xl md:text-2xl mb-10 max-w-2xl mx-auto text-primary-foreground/90 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
-            AI Engineer with expertise in LLMs, Computer Vision, and Cloud Infrastructure. Master's in CIS at Northeastern University.
+            UI/UX Designer with technical expertise in frontend development and AI. Creating user-centered designs backed by code at Northeastern University.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
@@ -155,7 +155,7 @@ const Index = () => {
               Skills & Competencies
             </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Full-stack AI/ML capabilities with expertise in LLMs, Computer Vision, and Cloud Infrastructure
+            Design-to-code expertise with strong foundation in user research, frontend development, and technical problem-solving
           </p>
           </div>
 
@@ -202,11 +202,11 @@ const Index = () => {
             About Me
           </h2>
           <p className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed mb-10 text-primary-foreground/90">
-            I'm an AI Engineer and Developer pursuing my Master's in Computer Information Systems at Northeastern University (graduating Dec 2025). 
-            With experience at Rakuten, Harvard Medical School, and Siemens Healthineers, I specialize in building intelligent, scalable AI solutions. 
-            From achieving 90%+ accuracy in AI-powered IVR systems to engineering AR vision systems with 94% object guidance precision, 
-            I combine cutting-edge AI/ML with robust cloud infrastructure. I'm passionate about exploring LLMs, computer vision, and real-time systems 
-            that solve complex real-world problems.
+            I'm a UI/UX Designer and Developer pursuing my Master's in Computer Information Systems at Northeastern University (graduating Dec 2025). 
+            With experience at Rakuten, Harvard Medical School, and Siemens Healthineers, I specialize in creating intuitive, user-centered designs 
+            that are technically sound and accessible. My unique advantage is bridging design and development—I don't just design interfaces, 
+            I build them with React and understand the technical constraints. From redesigning healthcare dashboards to crafting AR interfaces 
+            for accessibility, I combine user research, visual design, and frontend development to create experiences that users love.
           </p>
           <Button variant="outline" size="lg" className="bg-primary-foreground/10 border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/20">
             Read Full Story
@@ -221,7 +221,7 @@ const Index = () => {
           <div className="flex flex-col md:flex-row justify-between items-center gap-8">
             <div className="text-center md:text-left">
               <h3 className="text-2xl font-bold mb-2">Let's Connect</h3>
-              <p className="text-muted-foreground mb-4">Open to AI/ML roles and exciting collaboration opportunities</p>
+              <p className="text-muted-foreground mb-4">Open to UI/UX design roles and product design opportunities</p>
               <div className="flex items-center gap-2 justify-center md:justify-start mb-2">
                 <Mail className="w-4 h-4 text-accent" />
                 <a href="mailto:singh.adityar@northeastern.edu" className="text-accent hover:underline">
@@ -259,7 +259,7 @@ const Index = () => {
           </div>
 
           <div className="mt-12 pt-8 border-t border-border text-center text-sm text-muted-foreground">
-            <p>© 2024 Aditya Ranjan Singh. AI Engineer • Developer • Problem Solver</p>
+            <p>© 2024 Aditya Ranjan Singh. UI/UX Designer • Developer • Problem Solver</p>
           </div>
         </div>
       </footer>
