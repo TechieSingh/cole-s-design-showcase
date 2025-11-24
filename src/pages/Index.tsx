@@ -4,6 +4,7 @@ import ProjectCard from "@/components/ProjectCard";
 import TestimonialCard from "@/components/TestimonialCard";
 import SkillCard from "@/components/SkillCard";
 import { ArrowRight, Mail, Linkedin, Github, Download, Palette, Code, Users, Briefcase } from "lucide-react";
+import { Link } from "react-router-dom";
 import heroBg from "@/assets/hero-bg.jpg";
 import project1 from "@/assets/project-1.jpg";
 import project2 from "@/assets/project-2.jpg";
@@ -111,14 +112,18 @@ const Index = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
-            <Button variant="hero" size="xl" className="group">
-              View My Work
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
-            <Button variant="outline" size="xl" className="bg-background/10 border-primary-foreground/20 text-primary-foreground hover:bg-background/20">
-              Download Resume
-              <Download className="w-5 h-5" />
-            </Button>
+            <a href="https://github.com/TechieSingh" target="_blank" rel="noopener noreferrer">
+              <Button variant="hero" size="xl" className="group">
+                View My Work
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </a>
+            <Link to="/resume">
+              <Button variant="outline" size="xl" className="bg-background/10 border-primary-foreground/20 text-primary-foreground hover:bg-background/20">
+                Download Resume
+                <Download className="w-5 h-5" />
+              </Button>
+            </Link>
           </div>
         </div>
 
@@ -208,10 +213,12 @@ const Index = () => {
             I build them with React and understand the technical constraints. From redesigning healthcare dashboards to crafting AR interfaces 
             for accessibility, I combine user research, visual design, and frontend development to create experiences that users love.
           </p>
-          <Button variant="outline" size="lg" className="bg-primary-foreground/10 border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/20">
-            Read Full Story
-            <ArrowRight className="w-5 h-5" />
-          </Button>
+          <Link to="/about">
+            <Button variant="outline" size="lg" className="bg-primary-foreground/10 border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/20">
+              Read Full Story
+              <ArrowRight className="w-5 h-5" />
+            </Button>
+          </Link>
         </div>
       </section>
 
@@ -224,8 +231,8 @@ const Index = () => {
               <p className="text-muted-foreground mb-4">Open to UI/UX design roles and product design opportunities</p>
               <div className="flex items-center gap-2 justify-center md:justify-start mb-2">
                 <Mail className="w-4 h-4 text-accent" />
-                <a href="mailto:singh.adityar@northeastern.edu" className="text-accent hover:underline">
-                  singh.adityar@northeastern.edu
+                <a href="mailto:singh.adityara@northeastern.edu" className="text-accent hover:underline">
+                  singh.adityara@northeastern.edu
                 </a>
               </div>
               <a 
@@ -239,22 +246,30 @@ const Index = () => {
               <p className="text-sm text-muted-foreground">Boston, MA • Northeastern University</p>
             </div>
 
-            <div className="flex gap-4">
-              <a href="https://linkedin.com/in/techiesingh" target="_blank" rel="noopener noreferrer">
-                <Button variant="outline" size="icon" className="hover-lift">
-                  <Linkedin className="w-5 h-5" />
+            <div className="flex flex-col gap-4 items-center md:items-end">
+              <div className="flex gap-4">
+                <a href="https://linkedin.com/in/techiesingh" target="_blank" rel="noopener noreferrer">
+                  <Button variant="outline" size="icon" className="hover-lift">
+                    <Linkedin className="w-5 h-5" />
+                  </Button>
+                </a>
+                <a href="https://github.com/TechieSingh" target="_blank" rel="noopener noreferrer">
+                  <Button variant="outline" size="icon" className="hover-lift">
+                    <Github className="w-5 h-5" />
+                  </Button>
+                </a>
+                <a href="mailto:singh.adityara@northeastern.edu">
+                  <Button variant="outline" size="icon" className="hover-lift">
+                    <Mail className="w-5 h-5" />
+                  </Button>
+                </a>
+              </div>
+              <Link to="/resume">
+                <Button variant="outline" className="hover-lift">
+                  <Download className="w-4 h-4 mr-2" />
+                  Download Resume
                 </Button>
-              </a>
-              <a href="https://github.com/TechieSingh" target="_blank" rel="noopener noreferrer">
-                <Button variant="outline" size="icon" className="hover-lift">
-                  <Github className="w-5 h-5" />
-                </Button>
-              </a>
-              <a href="mailto:singh.adityar@northeastern.edu">
-                <Button variant="outline" size="icon" className="hover-lift">
-                  <Mail className="w-5 h-5" />
-                </Button>
-              </a>
+              </Link>
             </div>
           </div>
 
