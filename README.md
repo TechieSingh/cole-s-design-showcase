@@ -83,9 +83,7 @@ The project includes a GitHub Actions workflow (`.github/workflows/deploy.yml`) 
 ### Access Your Site
 
 After deployment, your site will be available at:
-- `https://<your-username>.github.io/cole-s-design-showcase/`
-
-Or if you've configured a custom domain, it will use that instead.
+- `https://techieSingh.github.io/cole-s-design-showcase/`
 
 ### Manual Deployment
 
